@@ -7,7 +7,7 @@ jobs:
   validate:
     name: Validate Bicep
     runs-on:
-      self-hosted
+      ubuntu-latest
     permissions:
       contents: read
 
@@ -43,7 +43,7 @@ jobs:
   whatif:
     name: What If
     runs-on:
-      self-hosted
+      ubuntu-latest
     concurrency: mgmt-tfstate
     environment: alz-mgmt-plan
     permissions:
